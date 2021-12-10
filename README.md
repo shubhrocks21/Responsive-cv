@@ -1,77 +1,285 @@
-# Responsive-cv
-It is for responsive CV by HTML &amp; CSS 
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
-        <link href="https://fonts.googleapis.com/css2?family=Norican&family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-             integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-        <link rel="stylesheet" href="style.css" />
-        <title>Resume</title>
-        <style>
-            /*{
-                width: 100%;
-            }*/
-            body{
-                background-image:url( 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPpHMwuO0LG4SNW58VMvftYy5s0Ia-d4aw-g&usqp=CAU')
-            }
-            .background{
-                color: white;
-                display: flex;
-                justify-content: space-evenly;
-                padding: 2%;
-            }
-            @media only screen and(min-width:500px){
-                
-                
-            }
-            .name{
-                 margin-left: 115px;
-                 color: white;
-                  margin-top: 81px;
-                  font-family: system-ui;
-                 font-size: 19px;
-                 width: 75%;
-                 float: left;
-            }
-            .image{
-                width: 25%;
-                height: 50%;
-                float: right;
-                border-radius: 3%;
-                border: 1px solid;
-                margin-right: 39px;
-                box-shadow: 2px 2px 15px #f7f2f2;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="background">
-                <div style="padding-left:40% ;"> Home </div>
-                <div> About </div>
-                <div> Skills </div>
-                <div> Experiences </div> 
-                <div> Portfolio </div>
-                <div> Pricing </div>
-                <div> Blog </div>
-                <div> Contact </div>
-            </div>
-            <div>
-                <div class="name">
-                    <img class="image"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS92eisuWOx3tEjeW14mT9ACVgXDwIRBGtnww&usqp=CAU">
-                    <h4>Hello I'm</h4>
-                    <h1 style="margin-bottom: 0px;">shubham jani</h1>
-                    <h3 style="margin-top: 0px;">Web Developer</h3>
-                    <label> <i style="margin-top: 37px; margin-right: 12px;" class="fas fa-envelope"></i> jani.shubham21@gmail.com</label><br>
-                    <label> <i style="margin-top: 15px; margin-right: 9px;" class="fas fa-phone-alt"></i>   6263797493</label><br>
-                    <label><i style="margin-top: 15px; margin-right: 9px;" class="fas fa-map-marker-alt"></i> shubham jani</label><br>
+<!DOCTYPE html>
 
-                </div>
-                   
-            </div>
-                
+<html>
+
+  <head>
+
+    <title>Google Homepage</title>
+
+    <style>
+
+html,body{
+
+margin: 0;
+
+height: 100;
+
+}
+
+#nav{
+
+display: flex;
+
+justify-content: flex-end;
+
+margin-top: 15px;
+
+}
+
+a{
+
+text-decoration: none;
+
+}
+
+a:hover{
+
+text-decoration: underline;
+
+}
+
+#nav a {
+
+margin-right: 20px;
+
+}
+
+#nav a.topimage {
+
+width: 22px;
+
+height: 22px;
+
+background-color: blue;
+
+border-radius: 50%;
+
+}
+
+#middle {
+
+flex-grow: 1;
+
+display: flex;
+
+flex-direction: column;
+
+justify-content: center;
+
+align-items: center;
+
+}
+
+#logo {
+
+text-align: center;
+
+}
+
+#searchingbar {
+
+margin-top: 20px;
+
+position: relative;
+
+text-align: center;
+
+}
+
+#search,#voice {
+
+position: absolute;
+
+margin-top: 10px;
+
+top: 0;
+
+height: 100%
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+}
+
+#search {
+
+left: 10px;
+
+}
+
+#voice {
+
+right: 10px;
+
+}
+
+#searchbar {
+
+padding-top: 10px;
+
+padding-bottom: 10px;
+
+outline: 0;
+
+width: 500px;
+
+padding-left: 30px;
+
+padding-right: 30px;
+
+border-radius: 15px;
+
+border: 1px solid #c4c4c4;
+
+}
+
+#searchbar:hover {
+
+box-shadow: 0 0 10px 2px rgb(233,233,233);
+
+}
+
+#buttons {
+
+margin: 20px;
+
+display: flex;
+
+justify-content: center;
+
+}
+
+.button {
+
+margin-left: 10px;
+
+margin-right: 10px;
+
+padding: 5px 10px;
+
+cursor: pointer;
+
+border-radius: 3px;
+
+background: rgb(231,231,231);
+
+border: 2px solid #eee transparent;
+
+}
+
+#links {
+
+  margin-bottom: 70px;
+
+margin-top: 5px;
+
+text-align: center;
+
+}
+
+#body {
+
+display: flex;
+
+flex-direction: column;
+
+}
+
+.button:hover {
+
+box-shadow: 0 0 2px black;
+
+border: 2px solid #eee;
+
+}
+
+#footercontent {
+
+background: #eee;
+
+border-top: 1px solid black;
+}
+.nannu {
+    background: #eee;
+    padding:5px;
+}
+.nannu a {
+    margin: 10px;
+    padding: 3px;
+}
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div id="nav">
+
+      <a class="toplink">Gmail</a>
+
+      <a class="toplink">Image</a>
+
+      <a class="topimage"></a>
+
+    </div>
+
+    <div id="middle">
+
+      <div id="logo">
+
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" />
+
         </div>
-    </body>
-</html>
+
+        <div id="searchingbar">
+
+          <div id="search">X</div>
+
+          <input id="searchbar"type="text">
+
+          <div id="voice">Y</div>
+
+        </div>
+
+        <div id="buttons">
+
+          <div class="button">
+
+            Google Search
+
+          </div>
+
+          <div class="button">
+
+            I'm feeling lucky
+
+          </div>
+
+          </div>
+
+          <div id="links">
+
+            Google is offered in <a href="">HINDI</a> <a href="">English</a>
+
+            </div>
+
+            </div>
+
+            <div id="footer">
+
+              <div id="footercontent">
+
+                <a>India</a>
+                </div>
+                <div class="nannu"
+                <a>Advertising</a> <a>Bussiness</a> <a>About</a> <a>Setting</a> <a>Privacy</a> <a>Terms</a>
+
+              </div>
+
+              </body>
+
+  </html>
